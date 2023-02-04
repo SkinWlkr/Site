@@ -41,7 +41,7 @@ section aside h2 {
 
 input[type=email], 
 input[type=password] {
-    width: 100%;
+    width: 95%;
     padding: 6px 8px;
     font-size: 14px;
     margin: 5px 0;
@@ -56,7 +56,7 @@ input:invalid {
    box-shadow: #ff0000 2.5px 2px;
 }
 
-button[type=submit] {
+input[type=submit] {
     margin: 8px 0;
     width: 100%;
     border: none;
@@ -71,10 +71,10 @@ button[type=submit] {
 
 input[type=email]:focus, 
 input[type=password]:focus {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
-button[type=submit]:focus {
+input[type=submit]:focus {
     transform: scale(1.1);
     color: #555;
     background-color: #fff;

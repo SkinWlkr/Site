@@ -2,6 +2,7 @@
 <html>
   <head>
     <script src="../Js/DisabledButton.js"></script>
+    <script src="../Js/forGif.js"></script>
     <link rel="stylesheet" href="../Css/Login.css" />
     <title>Login</title>
   </head>
@@ -10,7 +11,7 @@
       <aside>
         <h1>Login</h1>
         <h2>Please enter your credentials</h2>
-        <form id="form" action="">
+        <form id="form" action="User/user.">
           <input
             id="email"
             type="email"
@@ -24,12 +25,14 @@
             type="password"
             placeholder="Password"
             required
-            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,}$"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8, 64}$"
             title="Must contain at least one uppercase, lowercase letter, one number and at least 8 or more character long"
             onkeyup="check();"
-          />
-          <button id="Submit" type="submit" href="">Login</button>
+          /><a onclick="forGif();"><img src="../Immagini/icons8-visibile.gif" alt="Fuck" ></a>
+          <input type="submit" value="Sent" > 
+          
         </form>
+        
         <p>Not Yet Registered? <a href="Register.html">Sign Up</a></p>
       </aside>
     </section>
