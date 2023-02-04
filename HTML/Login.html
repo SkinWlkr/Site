@@ -1,7 +1,7 @@
 <!DOCTYPE >
 <html>
   <head>
-    <script src=""></script>
+    <script src="../Js/DisabledButton.js"></script>
     <link rel="stylesheet" href="../Css/Login.css" />
     <title>Login</title>
   </head>
@@ -26,8 +26,9 @@
             required
             pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,}$"
             title="Must contain at least one uppercase, lowercase letter, one number and at least 8 or more character long"
+            onkeyup="check();"
           />
-          <button type="submit" href="">Login</button>
+          <button id="Submit" type="submit" href="">Login</button>
         </form>
         <p>Not Yet Registered? <a href="Register.html">Sign Up</a></p>
       </aside>
