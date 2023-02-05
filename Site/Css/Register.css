@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: cursive;
+}
+
+body {
+    background: #000550;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section aside {
+    background: #0000007f;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 7px 0 #00055057;
+}
+
+section aside h1 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+section aside h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+    color: whitesmoke;
+    font-weight: normal;
+}
+
+input[type=email], 
+input[type=password] {
+    width: 95%;
+    padding: 6px 8px;
+    font-size: 14px;
+    margin: 5px 0;
+    color: #555;
+    background-color: #fff;
+    border: #c9c9c9 solid 1px;
+    border-radius: 3px;
+    transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+input:invalid {
+   box-shadow: #ff0000 2.5px 2px;
+}
+
+input[type=submit] {
+    margin: 8px 0;
+    width: 100%;
+    border: none;
+    background-color: #555;
+    color: #0000007f;
+    padding: 8px 0;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+input[type=email]:focus, 
+input[type=password]:focus {
+    transform: scale(1.1);
+}
+
+input[type=submit]:focus {
+    transform: scale(1.1);
+    color: #555;
+    background-color: #fff;
+}
+
+section aside p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    color: whitesmoke;
+}
+
+section aside p a {
+    color: #555;
+    text-decoration: underline;
+}
+
+section aside p a:hover {
+    text-decoration: none;
+}
